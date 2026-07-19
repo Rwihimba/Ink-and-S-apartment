@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    { "path": "/api/cron/revalidate", "schedule": "0 5 * * *" },
+    { "path": "/api/cron/ping-sitemap", "schedule": "30 5 * * *" },
+    { "path": "/api/cron/sync-availability", "schedule": "0 3 * * *" },
+    { "path": "/api/cron/rotate-kigali", "schedule": "0 4 * * 1" }
+  ]
+}

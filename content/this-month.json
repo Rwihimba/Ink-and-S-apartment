@@ -1,0 +1,65 @@
+{
+  "_comment": "Editable 'This month in Kigali' editions. The homepage shows one, rotating by ISO week (editions[week % length]). Edit freely — add, reorder or remove editions; the weekly cron revalidates the homepage so changes go live. Keep events evergreen/recurring to avoid going stale.",
+  "editions": [
+    {
+      "id": "coffee-hills",
+      "title": "Coffee, hills & clear-sky mornings",
+      "note": "Kigali's dry-season light makes for crisp mornings and long golden evenings — perfect for a rooftop coffee before a day of meetings or exploring.",
+      "events": [
+        { "name": "Car Free Day", "when": "1st & 3rd Sunday", "where": "Citywide — walk, run or cycle car-free streets" },
+        { "name": "Weekend coffee crawl", "when": "Anytime", "where": "Question Coffee, Inzora Rooftop & local roasters" },
+        { "name": "Kimironko Market", "when": "Daily", "where": "Fabrics, crafts and fresh produce" }
+      ]
+    },
+    {
+      "id": "arts-and-makers",
+      "title": "Arts, makers & live music",
+      "note": "Kigali's creative scene is buzzing right now — galleries, craft markets and open-air music make for easy, memorable evenings after work.",
+      "events": [
+        { "name": "Inema Arts Centre", "when": "Open daily", "where": "Kacyiru — studios, exhibitions & Thursday socials" },
+        { "name": "Live music nights", "when": "Weekends", "where": "Kimihurura lounges & rooftops" },
+        { "name": "Go Kigali craft market", "when": "Selected weekends", "where": "Local designers & makers" }
+      ]
+    },
+    {
+      "id": "green-city-walks",
+      "title": "Green city walks & viewpoints",
+      "note": "Between the rains the hills turn lush and green. It's a lovely stretch for walks, viewpoints and a slow weekend in the city.",
+      "events": [
+        { "name": "Mount Kigali viewpoint", "when": "Anytime", "where": "Panoramic city views, ~20 min away" },
+        { "name": "Nyandungu Eco-Park", "when": "Open daily", "where": "Wetland boardwalks & birdlife" },
+        { "name": "Presidential Palace Museum", "when": "Tue–Sun", "where": "History a short drive from Kacyiru" }
+      ]
+    },
+    {
+      "id": "food-and-flavour",
+      "title": "Food & flavour season",
+      "note": "From brochettes to brunch, Kigali's food scene is at its best. Book a table nearby or let us point you to a local favourite.",
+      "events": [
+        { "name": "Repub Lounge", "when": "Dinner", "where": "Modern Rwandan cuisine, Kiyovu" },
+        { "name": "Meze Fresh", "when": "Lunch & dinner", "where": "Casual bowls near Kimihurura" },
+        { "name": "Sunday brunch", "when": "Sundays", "where": "Kigali Heights cafés & hotels" }
+      ]
+    },
+    {
+      "id": "business-and-conferences",
+      "title": "Conference & business season",
+      "note": "It's a busy stretch for summits and conferences at the Convention Centre — a great time to be based minutes away in calm, connected Kacyiru.",
+      "events": [
+        { "name": "Kigali Convention Centre", "when": "Ongoing", "where": "Summits, expos & forums, 12 min away" },
+        { "name": "Norrsken House Kigali", "when": "Weekdays", "where": "Co-working & tech events" },
+        { "name": "BK Arena", "when": "Event nights", "where": "Concerts, sport & big gatherings" }
+      ]
+    },
+    {
+      "id": "gorillas-and-getaways",
+      "title": "Gorillas & weekend getaways",
+      "note": "Using Kigali as a base? It's an ideal season for a weekend escape — the city is your calm, comfortable home between adventures.",
+      "events": [
+        { "name": "Volcanoes National Park", "when": "Weekend trip", "where": "Gorilla trekking, ~2.5 hrs north" },
+        { "name": "Lake Kivu", "when": "Weekend trip", "where": "Beaches & boat rides in the west" },
+        { "name": "Nyungwe Forest", "when": "Long weekend", "where": "Canopy walk & primates" }
+      ]
+    }
+  ]
+}
