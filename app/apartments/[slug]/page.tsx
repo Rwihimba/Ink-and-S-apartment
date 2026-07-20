@@ -30,7 +30,8 @@ export async function generateMetadata({
     description: desc.slice(0, 158),
     alternates: { canonical: `/apartments/${u.slug}` },
     openGraph: {
-      title: `${u.name} | Ink & S Apartments, Kigali`,
+      siteName: "Ink & S Apartment Hotel",
+      title: `${u.name} | Ink & S Apartment Hotel, Kigali`,
       description: u.blurb,
       url: `/apartments/${u.slug}`,
       images: [u.images[0].src],

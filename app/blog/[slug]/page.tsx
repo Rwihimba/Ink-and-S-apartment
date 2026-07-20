@@ -24,6 +24,7 @@ export async function generateMetadata({
     description: post.description.slice(0, 158),
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
+      siteName: "Ink & S Apartment Hotel",
       type: "article",
       title: post.title,
       description: post.description,

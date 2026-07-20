@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s | Ink & S Apartments",
+    template: "%s | Ink & S Apartment Hotel",
   },
   description: SITE_DESCRIPTION,
   keywords: SITE_KEYWORDS,
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
+    // Title/description intentionally omitted so each page derives its own
+    // (from its `title`/`description`) instead of inheriting the home page's.
     card: "summary_large_image",
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
     images: [OG_IMAGE],
   },
   robots: {

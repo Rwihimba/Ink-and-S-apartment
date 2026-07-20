@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     "Answers to common questions about staying with Ink & S in Kigali: check-in, Mobile Money & card payments, airport pickup, WiFi speed, security and long stays.",
   alternates: { canonical: "/faq" },
   openGraph: {
-    title: "Frequently Asked Questions | Ink & S Apartments, Kigali",
+      siteName: "Ink & S Apartment Hotel",
+    title: "Frequently Asked Questions | Ink & S Apartment Hotel, Kigali",
     description:
       "Check-in, payments (MoMo & cards), airport pickup, WiFi, security and more — everything guests ask before booking in Kigali.",
     url: "/faq",

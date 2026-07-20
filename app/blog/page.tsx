@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Practical guides to staying and working in Kigali: where to stay, furnished apartment vs hotel costs, and a business traveler's guide to the city.",
   alternates: { canonical: "/blog" },
   openGraph: {
+      siteName: "Ink & S Apartment Hotel",
     title: "The Ink & S Blog — Kigali Stay & Travel Guides",
     description:
       "Where to stay in Kigali, apartment vs hotel costs, and a business traveler's guide to the city.",

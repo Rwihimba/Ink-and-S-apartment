@@ -11,7 +11,8 @@ export const metadata: Metadata = {
     "Ink & S sits in Kacyiru/Gishushu, one of Kigali's calmest, most central districts — 12 minutes from the airport and minutes from the Convention Centre, Kigali Heights and BK Arena.",
   alternates: { canonical: "/location" },
   openGraph: {
-    title: "Where We Are — Kacyiru, Kigali | Ink & S Apartments",
+      siteName: "Ink & S Apartment Hotel",
+    title: "Where We Are — Kacyiru, Kigali | Ink & S Apartment Hotel",
     description:
       "A calm, central Kigali base: 12 minutes to the airport, minutes to the Convention Centre, Kigali Heights, BK Arena, restaurants and transport.",
     url: "/location",

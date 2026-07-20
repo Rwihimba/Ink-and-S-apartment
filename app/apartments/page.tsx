@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Four fully furnished apartments for rent in Kigali — from a signature executive suite to a great-value studio. Photos, amenities and pricing for each unit.",
   alternates: { canonical: "/apartments" },
   openGraph: {
+      siteName: "Ink & S Apartment Hotel",
     title: "Furnished Apartments for Rent in Kigali | Ink & S",
     description:
       "Four fully furnished apartments in Kigali — photos, amenities and pricing for each unit.",

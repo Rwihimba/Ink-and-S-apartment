@@ -6,14 +6,14 @@ export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.inkands.rw"
 ).replace(/\/$/, "");
 
-export const SITE_NAME = "Ink & S Apartments";
+export const SITE_NAME = "Ink & S Apartment Hotel";
 export const LEGAL_NAME = "Ink & S Apartment Hotel";
 
 export const SITE_DESCRIPTION =
   "Furnished apartments for rent in Kigali, Rwanda. A boutique Airbnb alternative for short & long stays — fast WiFi, free breakfast, secure parking and skyline views.";
 
 export const SITE_TITLE =
-  "Ink & S Apartments | Furnished Apartment Rentals in Kigali, Rwanda";
+  "Ink & S Apartment Hotel | Furnished Apartment Rentals in Kigali, Rwanda";
 
 export const SITE_KEYWORDS = [
   "apartment for rent in Kigali",
