@@ -15,7 +15,6 @@ export const AMENITIES = [
   "Fully furnished",
   "Free high-speed WiFi",
   "Complimentary breakfast",
-  "Fully equipped kitchenette",
   "Professionally cleaned",
   "Self check-in",
   "Free on-site parking",

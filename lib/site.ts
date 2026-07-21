@@ -27,10 +27,10 @@ export const SITE_KEYWORDS = [
 ];
 
 export const CONTACT = {
-  phone: "+250784725226",
-  phoneDisplay: "+250 784 725 226",
+  phone: "+250796707342",
+  phoneDisplay: "+250 796 707 342",
   email: "stay@inkands.rw",
-  whatsapp: "https://wa.me/250784725226",
+  whatsapp: "https://wa.me/250796707342",
   mapsUrl: "https://maps.app.goo.gl/TQHayNzZiVbHdkyEA",
 };
 

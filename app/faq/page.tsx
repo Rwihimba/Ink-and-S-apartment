@@ -56,7 +56,7 @@ export default function FaqPage() {
         >
           Still have a question?{" "}
           <a
-            href="https://wa.me/250784725226"
+            href="https://wa.me/250796707342"
             target="_blank"
             rel="noopener"
             style={{ color: "#A0561F", fontWeight: 600 }}

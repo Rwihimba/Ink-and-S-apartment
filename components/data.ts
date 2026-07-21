@@ -1,6 +1,6 @@
 // Content extracted verbatim from the Claude Design source (Ink & S Landing).
 
-export const WA_LINK = "https://wa.me/250784725226";
+export const WA_LINK = "https://wa.me/250796707342";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -55,7 +55,7 @@ export const APARTMENTS: Apartment[] = [
     img: "/assets/bedroom-2.jpg",
     alt: "Classic self-contained studio apartment at Ink & S in Kigali",
     blurb:
-      "A smart, self-contained studio with a fully equipped kitchenette.",
+      "A smart, self-contained studio — efficient, spotless and easy to love.",
   },
 ];
 

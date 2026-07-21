@@ -17,7 +17,6 @@ export type Unit = {
 const BASE_AMENITIES = [
   "Fully furnished",
   "Free high-speed WiFi",
-  "Fully equipped kitchenette",
   "Smart TV with streaming",
   "Air conditioning",
   "Complimentary breakfast",
@@ -68,7 +67,7 @@ export const UNITS: Unit[] = [
       "Open living space bathed in light, made for longer, comfortable stays.",
     description: [
       "The Prime is our most-booked apartment for good reason: a bright, open-plan living space that feels like home from the moment you arrive. It's ideally suited to longer stays, remote work and relocations.",
-      "Cook a proper meal in the full kitchenette, set up at the workspace for the day, then stretch out in the living area come evening — everything you need is already here.",
+      "Set up at the workspace for the day, then stretch out in the living area come evening — everything you need is already here.",
     ],
     images: [
       { src: "/assets/living-1.jpg", alt: "Open-plan living space in the Prime Apartment at Ink & S, Kigali" },
@@ -92,7 +91,7 @@ export const UNITS: Unit[] = [
       "Warm, restful and intimate — everything you need, nothing you don’t.",
     description: [
       "The Cozy Apartment is warm, restful and intimate — a smart choice for solo travellers and couples who want comfort and great value without compromise.",
-      "It carries the same quiet luxury as our larger units: fast WiFi, a fully equipped kitchenette, hotel-standard cleaning and a restful bedroom for peaceful nights above the city.",
+      "It carries the same quiet luxury as our larger units: fast WiFi, hotel-standard cleaning and a restful bedroom for peaceful nights above the city.",
     ],
     images: [
       { src: "/assets/bedroom-1.jpg", alt: "Warm, restful bedroom in the Cozy Apartment at Ink & S, Kigali" },
@@ -112,14 +111,14 @@ export const UNITS: Unit[] = [
     size: "Self-contained studio",
     view: "City-facing",
     blurb:
-      "A smart, self-contained studio with a fully equipped kitchenette.",
+      "A smart, self-contained studio — efficient, spotless and easy to love.",
     description: [
-      "The Classic is a smart, self-contained studio: a well-designed single space with a fully equipped kitchenette, comfortable sleeping area and dedicated desk — everything the essentials-focused traveller needs.",
+      "The Classic is a smart, self-contained studio: a well-designed single space with a comfortable sleeping area and dedicated desk — everything the essentials-focused traveller needs.",
       "It's efficient, spotless and easy to love — perfect for short business trips and independent travellers who value a great location and a great rate.",
     ],
     images: [
       { src: "/assets/bedroom-2.jpg", alt: "Self-contained studio layout of the Classic Apartment at Ink & S, Kigali" },
-      { src: "/assets/living-1.jpg", alt: "Living and kitchenette area in the Classic Apartment in Kigali" },
+      { src: "/assets/living-1.jpg", alt: "Living area in the Classic Apartment in Kigali" },
       { src: "/assets/bedroom-3.jpg", alt: "Sleeping area in the Classic Apartment in Kigali" },
     ],
     amenities: [...BASE_AMENITIES, "Self-contained studio", "Single/double bed", "Efficient footprint"],

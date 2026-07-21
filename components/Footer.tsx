@@ -117,10 +117,10 @@ export default function Footer() {
               rel="noopener"
               className="foot-link"
             >
-              WhatsApp · +250 784 725 226
+              WhatsApp · +250 796 707 342
             </a>
-            <a href="tel:+250784725226" className="foot-link">
-              +250 784 725 226
+            <a href="tel:+250796707342" className="foot-link">
+              +250 796 707 342
             </a>
             <a href="mailto:stay@inkands.rw" className="foot-link">
               stay@inkands.rw
