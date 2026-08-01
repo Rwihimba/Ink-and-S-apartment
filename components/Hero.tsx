@@ -15,7 +15,7 @@ export default function Hero() {
       <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
         <Image
           src="/assets/hero-sunset.jpg"
-          alt="Ink & S Apartment at sunset in Kigali"
+          alt="Ink & S Apartment Hotel at sunset in Kigali"
           fill
           priority
           sizes="100vw"
@@ -82,7 +82,7 @@ export default function Hero() {
           }}
         >
           Wake to panoramic city views, work from calm, light-filled spaces, and
-          unwind in quiet luxury. Thoughtfully furnished apartments made for
+          unwind in quiet luxury. Thoughtfully furnished apartment hotel units made for
           business and leisure alike.
         </p>
         <div

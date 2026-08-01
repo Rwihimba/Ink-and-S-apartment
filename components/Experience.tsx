@@ -31,7 +31,7 @@ export default function Experience() {
           >
             <Image
               src="/assets/living-2.jpg"
-              alt="Guest relaxing in a light-filled Ink & S apartment in Kigali"
+              alt="Guest relaxing in a light-filled Ink & S Apartment Hotel in Kigali"
               fill
               sizes="(max-width:760px) 100vw, 40vw"
               style={{ objectFit: "cover" }}

@@ -7,7 +7,7 @@ import BookingCTA from "@/components/BookingCTA";
 import JsonLd from "@/components/JsonLd";
 import { apartmentLd, breadcrumbLd } from "@/lib/schema";
 import { WA_LINK } from "@/components/data";
-import { UNITS, getUnit } from "@/lib/apartments";
+import { UNITS, getUnit, nightlyRate } from "@/lib/apartments";
 
 export function generateStaticParams() {
   return UNITS.map((u) => ({ slug: u.slug }));
@@ -51,8 +51,13 @@ export default async function UnitPage({
   const specs = [
     { label: "Sleeps", value: `${u.guests} guest${u.guests > 1 ? "s" : ""}` },
     { label: "Layout", value: u.bedrooms },
-    { label: "Bathroom", value: `${u.bathrooms} en-suite` },
+    {
+      label: u.bathrooms > 1 ? "Bathrooms" : "Bathroom",
+      value: `${u.bathrooms} en-suite`,
+    },
+    { label: "Room size", value: u.roomSize },
     { label: "View", value: u.view },
+    { label: "Availability", value: `${u.unitsAvailable} units here` },
   ];
 
   return (
@@ -130,7 +135,7 @@ export default async function UnitPage({
                 fontWeight: 600,
               }}
             >
-              The Apartment
+              The Apartment Hotel
             </span>
             <h2
               style={{
@@ -260,7 +265,7 @@ export default async function UnitPage({
                   color: "#16495B",
                 }}
               >
-                {u.price}
+                {nightlyRate(u)}
               </span>
               <p
                 style={{
@@ -339,6 +344,8 @@ export default async function UnitPage({
             description: u.description.join(" "),
             images: u.images.map((i) => i.src),
             amenities: u.amenities,
+            guests: u.guests,
+            priceUSD: u.priceUSD,
           }),
           breadcrumbLd([
             { name: "Home", path: "/" },

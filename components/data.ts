@@ -22,38 +22,47 @@ export type Apartment = {
 
 export const APARTMENTS: Apartment[] = [
   {
-    name: "Grand Executive Apartment",
+    name: "Grand Executive Apartment Hotel",
     tag: "Signature",
-    price: "Price on request",
-    img: "/assets/bedroom-3.jpg",
-    alt: "Grand Executive Apartment bedroom retreat at Ink & S in Kigali",
+    price: "$120 / night",
+    img: "/assets/grand-executive-bedroom.jpg",
+    alt: "Super King bedroom in the Grand Executive Apartment Hotel at Ink & S in Kigali",
     blurb:
-      "Our largest suite — a serene bedroom retreat with room to work and unwind.",
+      "Two bedrooms, two bathrooms and a private balcony — our largest stay.",
   },
   {
-    name: "Prime Apartment",
+    name: "Prime Apartment Hotel",
     tag: "Most Popular",
-    price: "Price on request",
-    img: "/assets/living-1.jpg",
-    alt: "Prime Apartment open living space at Ink & S in Kigali",
+    price: "$100 / night",
+    img: "/assets/prime-living.jpg",
+    alt: "Separate living room in the Prime Apartment Hotel at Ink & S in Kigali",
     blurb:
-      "Open living space bathed in light, made for longer, comfortable stays.",
+      "A King bed, a separate living room and your own balcony to step out onto.",
   },
   {
-    name: "Cozy Apartment",
+    name: "Cozy Apartment Hotel",
     tag: "Great Value",
-    price: "Price on request",
-    img: "/assets/bedroom-1.jpg",
-    alt: "Cozy Apartment warm bedroom at Ink & S in Kigali",
+    price: "$70 / night",
+    img: "/assets/cozy-bedroom.jpg",
+    alt: "Blue-headboard bedroom in the Cozy Apartment Hotel at Ink & S in Kigali",
     blurb:
       "Warm, restful and intimate — everything you need, nothing you don’t.",
   },
   {
-    name: "Classic Apartment",
+    name: "Classic Apartment Hotel",
+    tag: "Comfort",
+    price: "$60 / night",
+    img: "/assets/classic-bedroom.jpg",
+    alt: "Crisp white linen and curtained window in the Classic Apartment Hotel at Ink & S in Kigali",
+    blurb:
+      "A quiet, well-proportioned suite — the longest floor plan we have.",
+  },
+  {
+    name: "Studio Apartment Hotel",
     tag: "Essentials",
-    price: "Price on request",
-    img: "/assets/bedroom-2.jpg",
-    alt: "Classic self-contained studio apartment at Ink & S in Kigali",
+    price: "$50 / night",
+    img: "/assets/studio-bedroom.jpg",
+    alt: "Double bed and bedside lamp in the Studio Apartment Hotel at Ink & S in Kigali",
     blurb:
       "A smart, self-contained studio — efficient, spotless and easy to love.",
   },
@@ -157,13 +166,27 @@ export const REVIEWS = [
 export type GalleryItem = { cat: string; img: string; alt: string };
 
 export const GALLERY: GalleryItem[] = [
-  { cat: "Living Room", img: "/assets/living-1.jpg", alt: "Living room of the Ink & S apartment in Kigali" },
-  { cat: "Living Room", img: "/assets/living-2.jpg", alt: "Bright living space in the Ink & S apartment in Kigali" },
-  { cat: "Bedroom", img: "/assets/bedroom-1.jpg", alt: "Cozy bedroom in the Ink & S apartment in Kigali" },
-  { cat: "Bedroom", img: "/assets/bedroom-3.jpg", alt: "Executive bedroom in the Ink & S apartment in Kigali" },
-  { cat: "Bedroom", img: "/assets/bedroom-2.jpg", alt: "Classic bedroom in the Ink & S apartment in Kigali" },
-  { cat: "Balcony", img: "/assets/balcony-1.jpg", alt: "Balcony of the Ink & S apartment overlooking Kigali" },
-  { cat: "Balcony", img: "/assets/exterior-1.jpg", alt: "Exterior view of the Ink & S apartment building in Kigali" },
+  { cat: "Living Room", img: "/assets/grand-executive-living.jpg", alt: "Living room of the Grand Executive Apartment Hotel in Kigali" },
+  { cat: "Living Room", img: "/assets/prime-living.jpg", alt: "Living room of the Prime Apartment Hotel in Kigali" },
+  { cat: "Living Room", img: "/assets/living-2.jpg", alt: "Bright living space at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Bedroom", img: "/assets/grand-executive-bedroom.jpg", alt: "Super King bedroom in the Grand Executive Apartment Hotel in Kigali" },
+  { cat: "Bedroom", img: "/assets/cozy-bedroom.jpg", alt: "Blue-headboard bedroom in the Cozy Apartment Hotel in Kigali" },
+  { cat: "Bedroom", img: "/assets/prime-bedroom.jpg", alt: "King bedroom in the Prime Apartment Hotel in Kigali" },
+  { cat: "Bedroom", img: "/assets/studio-bedroom.jpg", alt: "Double bed in the Studio Apartment Hotel in Kigali" },
+  { cat: "Bedroom", img: "/assets/classic-bedroom.jpg", alt: "Crisp white linen in the Classic Apartment Hotel in Kigali" },
+  { cat: "Bathroom", img: "/assets/classic-bathroom.jpg", alt: "Bathroom vanity and round mirror in the Classic Apartment Hotel in Kigali" },
+  { cat: "Bathroom", img: "/assets/cozy-bathroom.jpg", alt: "Bathroom with fresh towels in the Cozy Apartment Hotel in Kigali" },
+  { cat: "Bathroom", img: "/assets/studio-shower.jpg", alt: "Walk-in rain shower in the Studio Apartment Hotel in Kigali" },
+  { cat: "Kitchen", img: "/assets/gallery-kitchen-1.jpg", alt: "Shared kitchen with gas range, coffee maker and glassware at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Kitchen", img: "/assets/gallery-kitchen-2.jpg", alt: "Kitchen and dining corner with fridge and seating at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Balcony", img: "/assets/prime-balcony.jpg", alt: "Private balcony off the Prime Apartment Hotel in Kigali" },
+  { cat: "Balcony", img: "/assets/gallery-courtyard.jpg", alt: "View from a balcony down over the planted courtyard at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Balcony", img: "/assets/balcony-1.jpg", alt: "Balcony at Ink & S Apartment Hotel overlooking Kigali" },
+  { cat: "Parking", img: "/assets/gallery-parking.jpg", alt: "Secure gated parking area at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Parking", img: "/assets/gallery-entrance.jpg", alt: "Entrance and paved driveway at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Parking", img: "/assets/gallery-driveway.jpg", alt: "Paved driveway and planted walls at Ink & S Apartment Hotel in Kigali" },
+  { cat: "Parking", img: "/assets/gallery-facade.jpg", alt: "Ink & S Apartment Hotel facade above the paved forecourt in Kigali" },
+  { cat: "Balcony", img: "/assets/exterior-1.jpg", alt: "Exterior view of the Ink & S Apartment Hotel building in Kigali" },
 ];
 
 export const GALLERY_TABS = [
@@ -171,6 +194,7 @@ export const GALLERY_TABS = [
   "Living Room",
   "Bedroom",
   "Bathroom",
+  "Kitchen",
   "Balcony",
   "Parking",
 ];

@@ -70,7 +70,7 @@ export default function PropertyTour() {
             <div style={{ position: "absolute", inset: 0 }}>
               <Image
                 src="/assets/exterior-1.jpg"
-                alt="Ink & S apartment property in Kigali"
+                alt="Ink & S Apartment Hotel property in Kigali"
                 fill
                 sizes="(max-width:1080px) 100vw, 1080px"
                 style={{ objectFit: "cover" }}

@@ -5,18 +5,18 @@ import PageHero from "@/components/PageHero";
 import BookingCTA from "@/components/BookingCTA";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbLd } from "@/lib/schema";
-import { UNITS } from "@/lib/apartments";
+import { UNITS, nightlyRate } from "@/lib/apartments";
 
 export const metadata: Metadata = {
-  title: "Furnished Apartments in Kigali",
+  title: "Furnished Apartment Hotels in Kigali",
   description:
-    "Four fully furnished apartments for rent in Kigali — from a signature executive suite to a great-value studio. Photos, amenities and pricing for each unit.",
+    "Five fully furnished apartment hotel units for rent in Kigali — from a signature executive suite to a great-value studio. Photos, amenities and pricing for each unit.",
   alternates: { canonical: "/apartments" },
   openGraph: {
       siteName: "Ink & S Apartment Hotel",
-    title: "Furnished Apartments for Rent in Kigali | Ink & S",
+    title: "Furnished Apartment Hotel Units for Rent in Kigali | Ink & S",
     description:
-      "Four fully furnished apartments in Kigali — photos, amenities and pricing for each unit.",
+      "Five fully furnished apartment hotel units in Kigali — photos, amenities and pricing for each unit.",
     url: "/apartments",
     images: ["/assets/living-1.jpg"],
   },
@@ -26,9 +26,9 @@ export default function ApartmentsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Our Apartments"
-        title="Fully furnished apartments in Kigali"
-        subtitle="Four ways to feel at home — each fully furnished, quietly elegant and ready the moment you arrive. Explore every unit's photos, amenities and pricing."
+        eyebrow="Our Apartment Hotel"
+        title="Fully furnished apartment hotel units in Kigali"
+        subtitle="Five ways to feel at home — each fully furnished, quietly elegant and ready the moment you arrive. Explore every unit's photos, amenities and pricing."
         crumbs={[
           { label: "Home", href: "/" },
           { label: "Apartments", href: "/apartments" },
@@ -43,10 +43,10 @@ export default function ApartmentsPage() {
         }}
       >
         <div
-          className="grid-4"
+          className="grid-5"
           style={{ display: "grid", gap: 28 }}
         >
-          {UNITS.map((u) => (
+          {UNITS.map((u, i) => (
             <Link
               key={u.slug}
               href={`/apartments/${u.slug}`}
@@ -70,7 +70,9 @@ export default function ApartmentsPage() {
                   src={u.images[0].src}
                   alt={u.images[0].alt}
                   fill
-                  sizes="(max-width:560px) 100vw, (max-width:980px) 50vw, 25vw"
+                  sizes="(max-width:560px) 100vw, (max-width:980px) 50vw, 33vw"
+                  // First card is above the fold — Next flags it as the LCP element.
+                  priority={i === 0}
                   style={{ objectFit: "cover" }}
                 />
                 <span
@@ -133,7 +135,7 @@ export default function ApartmentsPage() {
                       letterSpacing: ".02em",
                     }}
                   >
-                    {u.price}
+                    {nightlyRate(u)}
                   </span>
                   <span
                     style={{ fontSize: 13, color: "#A0561F", fontWeight: 600 }}

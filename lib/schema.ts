@@ -137,6 +137,8 @@ export function apartmentLd(unit: {
   description: string;
   images: string[];
   amenities: string[];
+  guests: number;
+  priceUSD: number;
 }) {
   return {
     "@context": "https://schema.org",
@@ -150,6 +152,18 @@ export function apartmentLd(unit: {
       name,
       value: true,
     })),
+    occupancy: {
+      "@type": "QuantitativeValue",
+      maxValue: unit.guests,
+      unitCode: "C62", // UN/CEFACT code for "one" — i.e. a count of people
+    },
+    offers: {
+      "@type": "Offer",
+      price: unit.priceUSD,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: abs(`/apartments/${unit.slug}`),
+    },
     numberOfRooms: 1,
     petsAllowed: false,
   };

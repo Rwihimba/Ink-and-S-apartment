@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { APARTMENTS } from "./data";
 
-/** "Featured Stays" — the four apartments with pricing. */
+/** "Featured Stays" — the five apartment hotel units with pricing. */
 export default function Pricing() {
   return (
     <section
@@ -46,7 +46,7 @@ export default function Pricing() {
               maxWidth: "16ch",
             }}
           >
-            Four ways to feel at home
+            Five ways to feel at home
           </h2>
         </div>
         <p
@@ -58,12 +58,12 @@ export default function Pricing() {
             fontWeight: 300,
           }}
         >
-          Each apartment is fully furnished, quietly elegant, and ready the
+          Each apartment hotel unit is fully furnished, quietly elegant, and ready the
           moment you arrive.
         </p>
       </div>
 
-      <div className="grid-4" style={{ display: "grid", gap: 28 }}>
+      <div className="grid-5" style={{ display: "grid", gap: 28 }}>
         {APARTMENTS.map((a) => (
           <a
             key={a.name}
@@ -88,7 +88,7 @@ export default function Pricing() {
                 src={a.img}
                 alt={a.alt}
                 fill
-                sizes="(max-width:560px) 100vw, (max-width:980px) 50vw, 25vw"
+                sizes="(max-width:560px) 100vw, (max-width:980px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
               />
               <span

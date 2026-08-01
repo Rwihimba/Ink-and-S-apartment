@@ -178,69 +178,44 @@ export default function Amenities() {
             </div>
           </div>
 
+          {/* Two vertical columns — coffee and tea, poured fresh each morning. */}
           <div
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gridTemplateRows: "auto auto",
               gap: 14,
             }}
           >
-            <div
-              className="gal-item"
-              style={{
-                gridRow: "span 2",
-                position: "relative",
-                borderRadius: 20,
-                overflow: "hidden",
-                boxShadow: "0 24px 50px rgba(0,0,0,.28)",
-                aspectRatio: "3/4",
-              }}
-            >
-              <Image
-                src="/assets/breakfast-1.jpg"
-                alt="Full breakfast plate served at Ink & S apartment in Kigali"
-                fill
-                sizes="(max-width:760px) 50vw, 25vw"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <div
-              className="gal-item"
-              style={{
-                position: "relative",
-                borderRadius: 20,
-                overflow: "hidden",
-                boxShadow: "0 24px 50px rgba(0,0,0,.28)",
-                aspectRatio: "4/3",
-              }}
-            >
-              <Image
-                src="/assets/breakfast-2.jpg"
-                alt="Omelette and golden toast breakfast at Ink & S apartment in Kigali"
-                fill
-                sizes="(max-width:760px) 50vw, 25vw"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <div
-              className="gal-item"
-              style={{
-                position: "relative",
-                borderRadius: 20,
-                overflow: "hidden",
-                boxShadow: "0 24px 50px rgba(0,0,0,.28)",
-                aspectRatio: "4/3",
-              }}
-            >
-              <Image
-                src="/assets/breakfast-3.jpg"
-                alt="Breakfast spread with fresh juice at Ink & S apartment in Kigali"
-                fill
-                sizes="(max-width:760px) 50vw, 25vw"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
+            {[
+              {
+                src: "/assets/breakfast-coffee.jpg",
+                alt: "Locally roasted coffee poured fresh at Ink & S Apartment Hotel in Kigali",
+              },
+              {
+                src: "/assets/breakfast-omelette.jpg",
+                alt: "Folded omelette served with coffee at Ink & S Apartment Hotel in Kigali",
+              },
+            ].map((img) => (
+              <div
+                key={img.src}
+                className="gal-item"
+                style={{
+                  position: "relative",
+                  borderRadius: 20,
+                  overflow: "hidden",
+                  boxShadow: "0 24px 50px rgba(0,0,0,.28)",
+                  aspectRatio: "3/4",
+                }}
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width:760px) 50vw, 25vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
